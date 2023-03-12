@@ -61,6 +61,11 @@ body h1 span {
           flex-direction: column;
 }
 
+.chat-box .chat-messages {
+  height: 350px;
+  overflow: auto;
+}
+
 .chat-box h2 {
   color: #fff;
   margin-bottom: 50px;

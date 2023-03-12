@@ -40,6 +40,7 @@ function getChatsHtml() {
 
 function render() {
   document.getElementById("chat-messages").innerHTML = getChatsHtml();
+  chatMessages.scrollBottom = chatMessages.scrollHeight;
 }
 
 render();
