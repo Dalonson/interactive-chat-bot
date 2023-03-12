@@ -6,6 +6,7 @@ export const chatData = [
           Guaranteed return on investment. HMU DMs open!!`,
     replies: [],
     isLiked: false,
+    time: "",
     uuid: "4b161eee-c0f5-4545-9c4b-8562944223ee",
   },
   {
@@ -13,7 +14,7 @@ export const chatData = [
     profilePic: `images/musk.png`,
     chatText: `I need volunteers for a one-way mission to Mars 🪐. No experience necessary🚀`,
     isLiked: false,
-    isRetweeted: false,
+    time: "",
     uuid: "3c23454ee-c0f5-9g9g-9c4b-77835tgs2",
   },
   {
@@ -21,6 +22,7 @@ export const chatData = [
     profilePic: `images/flower.png`,
     chatText: `Are you a coder if you only know HTML?`,
     isLiked: false,
+    time: "",
     uuid: "8hy671sff-c0f5-4545-9c4b-1237gyys45",
   },
 ];
