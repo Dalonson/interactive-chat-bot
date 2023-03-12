@@ -44,7 +44,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   .chat-messages {
-    height: 350px;
+    height: 375px;
     overflow: auto;
   }
   h2 {
@@ -89,12 +89,14 @@ body {
     padding: 8px;
     resize: none;
     color: #fff;
+    font-size: 18px;
+    font-weight: 300;
   }
   button {
     width: 20%;
     border-radius: 8px;
     border: none;
-    font-size: 15px;
+    font-size: 18px;
     margin-left: 10px;
     display: flex;
     flex-direction: row;
@@ -104,7 +106,7 @@ body {
     background-color: #12b886;
     color: #fff;
     ion-icon {
-      font-size: 25fpx;
+      font-size: 25px;
     }
   }
 }

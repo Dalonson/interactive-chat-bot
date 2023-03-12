@@ -62,7 +62,7 @@ body h1 span {
 }
 
 .chat-box .chat-messages {
-  height: 350px;
+  height: 375px;
   overflow: auto;
 }
 
@@ -116,13 +116,15 @@ body h1 span {
   padding: 8px;
   resize: none;
   color: #fff;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .input-box button {
   width: 20%;
   border-radius: 8px;
   border: none;
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,6 +145,6 @@ body h1 span {
 }
 
 .input-box button ion-icon {
-  font-size: 25fpx;
+  font-size: 25px;
 }
 /*# sourceMappingURL=main.css.map */

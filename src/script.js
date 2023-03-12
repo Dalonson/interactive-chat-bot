@@ -20,8 +20,19 @@ const timestamp = `${formattedDate} ${formattedTime}`;
 const chatInput = document.getElementById("chat-input");
 const sendButton = document.getElementById("send-button");
 
+// let newMessage = document.getElementById("new-message");
+// newMessage = [];
+
 sendButton.addEventListener("click", function () {
-  console.log(chatInput.value);
+  // console.log(chatInput.value);
+  const newChat = {
+    handle: "Me",
+    chatText: chatInput.value,
+    time: timestamp,
+  };
+  chatData.push(newChat);
+  render();
+  chatInput.value = "";
 });
 
 function getChatsHtml() {
@@ -40,7 +51,8 @@ function getChatsHtml() {
 
 function render() {
   document.getElementById("chat-messages").innerHTML = getChatsHtml();
-  chatMessages.scrollBottom = chatMessages.scrollHeight;
+  const chatMessages = document.getElementById("chat-messages");
+  chatMessages.scrollTop = chatMessages.scrollHeight;
 }
 
 render();
