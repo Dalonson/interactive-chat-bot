@@ -23,3 +23,5 @@ const sendButton = documement.getElementById("send-button");
 sendButton.addEventListener("click", function () {
   console.log(chatInput.value);
 });
+
+// Get Chat Html content
