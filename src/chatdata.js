@@ -4,7 +4,6 @@ export const chatData = [
     profilePic: `images/troll.jpg`,
     chatText: `Buy Bitcoin, ETH Make 💰💰💰 low low prices. 
           Guaranteed return on investment. HMU DMs open!!`,
-    replies: [],
     isLiked: false,
     likes: 5,
     time: "",
