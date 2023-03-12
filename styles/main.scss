@@ -11,18 +11,96 @@ body {
   background-size: cover;
   background-clip: borderbox;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   h1 {
     color: #fff;
     margin-left: 25px;
     margin-top: 25px;
     font-size: 35px;
     span {
-      color: blue;
+      color: #0c8599;
     }
   }
 }
 
 .chat-box {
-  background-color: #fff;
-  width: 650px;
+  // background-color: #fff;
+  backdrop-filter: blur(9px) saturate(141%);
+  -webkit-backdrop-filter: blur(9px) saturate(141%);
+  background-color: rgba(12, 133, 153, 0.42);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  width: 750px;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: auto;
+  height: 65%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  h2 {
+    color: #fff;
+    margin-bottom: 50px;
+    span {
+      color: #0c8599;
+    }
+  }
+  .message {
+    backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(3px) saturate(200%);
+    background-color: rgba(121, 121, 137, 0.65);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 15px 20px;
+    width: 60%;
+  }
+  .message-sender {
+    color: rgb(31, 31, 31);
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .message-content {
+    color: #fff;
+    font-weight: 400;
+  }
+}
+
+.input-box {
+  display: flex;
+  flex-direction: row;
+
+  textarea {
+    width: 80%;
+    border-radius: 8px;
+    background: transparent;
+    outline: none;
+    padding: 8px;
+    resize: none;
+    color: #fff;
+  }
+  button {
+    width: 20%;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #12b886;
+    color: #fff;
+    ion-icon {
+      font-size: 25fpx;
+    }
+  }
 }

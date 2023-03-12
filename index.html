@@ -18,26 +18,39 @@
   <body>
     <h1>buzz<span>Word</span></h1>
     <main class="chat-box">
-      <h3>buzz<span>Word</span></h3>
+      <h2>buzz<span>Word</span></h2>
       <div class="chat-messages" id="chat-messages">
         <!-- <div class="message">
           <div class="message-sender">Tom Arnold</div>
           <div class="message-content">Dude! What are you doing tonight?</div>
           <div class="message-timestamp" d>Message Timestamp</div>
         </div> -->
-        <!-- <div></div>new messages here -->
+        <div id="new-message"></div>
       </div>
       <div class="input-box">
         <textarea
+          autofocus
           placeholder="Type your message here"
           id="chat-input"
-          cols="30"
-          rows="10"
+          required
+          wrap="soft"
+          name="chat-input"
         ></textarea>
-        <button class="send-button" id="send-button">Send</button>
+        <button class="send-button" id="send-button">
+          Send<ion-icon name="arrow-up-circle-outline"></ion-icon>
+        </button>
       </div>
     </main>
     <!-- js file -->
     <script type="module" src="/src/script.js"></script>
+    <!-- Ion icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
