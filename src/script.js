@@ -25,6 +25,7 @@ const sendButton = document.getElementById("send-button");
 
 sendButton.addEventListener("click", function () {
   // console.log(chatInput.value);
+
   const newChat = {
     handle: "Me",
     chatText: chatInput.value,
@@ -32,7 +33,21 @@ sendButton.addEventListener("click", function () {
   };
   chatData.push(newChat);
   render();
+
   chatInput.value = "";
+
+  const sendIcon = sendButton.querySelector("ion-icon");
+  if (sendIcon.getAttribute("name") === "send") {
+    sendIcon.setAttribute("name", "arrow-up-circle-outline");
+    setTimeout(() => {
+      sendIcon.setAttribute("name", "arrow-up-circle");
+    }, 700);
+  } else {
+    sendIcon.setAttribute("name", "arrow-up-circle");
+    setTimeout(() => {
+      sendIcon.setAttribute("name", "arrow-up-circle-outline");
+    }, 700);
+  }
 });
 
 function getChatsHtml() {
